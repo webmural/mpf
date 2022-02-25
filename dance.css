@@ -1,0 +1,67 @@
+.dew-diy {
+  --dew-shift: color 303ms;
+  --dew-solar: #cd5;
+  --dew-lunar: #528;
+  --dew-locus: currentColor;
+  --dew-hover: hue-rotate(-120deg);
+}
+
+.dew-hot {
+  --dew-solar: #010101;
+  --dew-lunar: deeppink;
+}
+
+.dew-warm {
+  --dew-solar: #202020;
+  --dew-lunar: orchid;
+}
+
+.dew-noise {
+  --dew-solar: #030303;
+  --dew-lunar: #999;
+}
+
+:link {
+  text-decoration: line-through dotted;
+}
+
+:focus {
+  outline-style: dotted;
+  outline-width: thick;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+  line-height: 1.6;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+
+dl {
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+dt {
+  flex-basis: 100%;
+}
+
+dd {
+  flex-basis: 100%;
+}
+
+figure {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1em;
+}
