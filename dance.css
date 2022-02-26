@@ -1,28 +1,71 @@
+@media (color) {
+  ::selection {
+    color: var(--dew-oil);
+    background: var(--dew-ink);
+  }
+}
+
 .dew-diy {
   --dew-shift: color 303ms;
-  --dew-solar: #cd5;
-  --dew-lunar: #528;
+  --dew-solar: #dba;
+  --dew-lunar: #315;
   --dew-locus: currentColor;
   --dew-hover: hue-rotate(-120deg);
 }
 
-.dew-hot {
-  --dew-solar: #010101;
+.dew-preamp {
+  --dew-solar: #111;
+  --dew-lunar: skyblue;
+}
+
+.dew-powamp {
+  --dew-solar: indigo;
+  --dew-lunar: lemonchiffon;
+}
+
+.dew-postamp {
+  --dew-solar: #528;
+  --dew-lunar: #bae;
+}
+
+.dew-active {
+  --dew-solar: #222;
+  --dew-lunar: salmon;
+}
+
+.dew-passive {
+  --dew-solar: #222;
+  --dew-lunar: silver;
+}
+
+.dew-wood {
+  --dew-solar: #222;
+  --dew-lunar: burlywood;
+}
+
+.dew-fire {
+  --dew-solar: #111;
   --dew-lunar: deeppink;
 }
 
-.dew-warm {
-  --dew-solar: #202020;
-  --dew-lunar: orchid;
+.dew-earth {
+  --dew-solar: #111;
+  --dew-lunar: rosybrown;
 }
 
-.dew-noise {
-  --dew-solar: #030303;
-  --dew-lunar: #999;
+.dew-metal {
+  --dew-solar: #101;
+  --dew-lunar: slategray;
+}
+
+.dew-water {
+  --dew-solar: #111;
+  --dew-lunar: deepskyblue;
 }
 
 :link {
-  text-decoration: line-through dotted;
+  text-decoration: overline dotted;
+  border: thin groove;
 }
 
 :focus {
@@ -38,30 +81,150 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   overflow-wrap: break-word;
-}
-
-dl {
-  font-size: 2rem;
-  font-weight: 600;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-dt {
-  flex-basis: 100%;
-}
-
-dd {
-  flex-basis: 100%;
-}
-
-figure {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-family: monospace;
   margin: auto;
   padding: 1em;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+abbr {
+  text-decoration: underline dotted;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  box-sizing: border-box;
+  padding: 1em;
+  font-size: calc(2em/3);
+}
+
+i {
+  font-family: monospace;
+}
+
+dfn {
+  font-size: 1rem;
+  font-style: unset;
+  font-weight: bold;
+}
+
+data {
+  padding: 1ex;
+  font-family: monospace;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  margin-block: 1em;
+}
+
+section p {
+  margin-block: 0;
+}
+
+.tube {
+  display: inline-table;
+}
+
+.tube:last-child {
+  display: table;
+}
+
+@media (orientation: portrait) {
+  li {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  data:nth-child(2) {
+    order: 3;
+  }
+}
+
+@media (orientation: landscape) {
+  li {
+    display: flex;
+    flex-flow: row;
+  }
+
+  li:nth-of-type(odd) {
+    list-style: none;
+    text-align: start;
+    float: left;
+    clear: right;
+    order: 1;
+  }
+
+  li:nth-of-type(odd)
+  data:nth-child(1) {
+    order: -1;
+  }
+
+  li:nth-of-type(even) {
+    list-style: none;
+    text-align: end;
+    float: right;
+    order: -1;
+  }
+
+  li:nth-of-type(even)
+  data:nth-child(1) {
+    order: 3;
+  }
+
+  li:nth-of-type(even)
+  data:nth-child(2) {
+    order: 2;
+  }
+
+  [value=nature],
+  [value=energy] {
+    font-size: calc(2em/3);
+  }
+
+  #duet {
+    contain: layout;
+    display: flow-root;
+  }
+
+  #duet p:first-child {
+    float: left;
+  }
+
+  #duet p:last-child {
+    float: right;
+    text-align: end;
+  }
+
+  .afar {
+    font-size: .618em;
+  }
+
+  .split {
+    display: flex;
+    margin: 0;
+  }
+}
+
+#triad p {
+  display: table;
+}
+
+[hidden],
+template {
+  display: none;
 }
