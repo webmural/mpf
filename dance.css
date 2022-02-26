@@ -75,8 +75,8 @@
 
 html {
   font-family: sans-serif;
-  font-size: calc(1em + 1vw + 1vh);
-  line-height: 1.6;
+  font-size: calc(1ex + 1vmin + 2vmax);
+  line-height: 1.618;
 }
 
 body {
