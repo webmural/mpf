@@ -8,7 +8,7 @@
 
 2, 3, 5
 
-## [composed](index.html) [list](https://developer.mozilla.org/HTML/Element/ol)
+## [composed](index.html#L20) [list](https://developer.mozilla.org/HTML/Element/ol)
 
 * 2x [energy](energy.json)
 * 5x [element](element.json)
@@ -32,6 +32,8 @@
 
 we're thankful for stars `*`
 <br>and retweets [@<b>webmural</b>](https://twitter.com/webmural)
+
+## [lighthouse](https://developers.google.com/web/tools/lighthouse)<sup>**100%**</sup>
 
 ## [opensource](https://webmural.com/license)
 
