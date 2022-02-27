@@ -14,7 +14,7 @@
 * [dual energy](energy.json)
 * [triad amp](amp.json)
 
-## cycle
+## [cycle](https://webmural.com/mpf/#cycle)
 
 * `2x5` `preamp`
 * `2x5` `powamp`
