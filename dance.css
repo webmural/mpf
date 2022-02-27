@@ -138,14 +138,6 @@ section p {
   margin-block: 0;
 }
 
-.tube {
-  display: inline-table;
-}
-
-.tube:last-child {
-  display: table;
-}
-
 @media (orientation: portrait) {
   li {
     display: flex;
