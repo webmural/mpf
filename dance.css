@@ -6,7 +6,7 @@
 }
 
 .dew-diy {
-  --dew-shift: color 303ms;
+  --dew-shift: color 101ms;
   --dew-solar: #dba;
   --dew-lunar: #315;
   --dew-locus: currentColor;
@@ -228,8 +228,8 @@ template {
   display: none;
 }
 
-li:active [value=energy],
-li:active [value=nature],
-li:not(:active) [value=symbol] {
-  display: none;
+li:focus [value=energy],
+li:focus [value=nature],
+li:not(:focus) [value=symbol] {
+  font-size: 0;
 }
