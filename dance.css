@@ -77,7 +77,7 @@
 
 html {
   font-family: sans-serif;
-  font-size: calc(1ex - 1pt + 1vmin + 2vmax);
+  font-size: calc(1ch + 2vmin/3 + 1vmax);
   line-height: 1.618;
 }
 
@@ -94,7 +94,7 @@ body {
 #about {
   display: flex;
   flex-direction: column;
-  font-size: calc(1em - 1vmin);
+  font-size: .8rem;
 }
 
 abbr {
@@ -194,9 +194,8 @@ section p {
   }
 
   [value=nature],
-  [value=energy],
-  .afar {
-    font-size: calc(2em/3);
+  [value=energy] {
+    font-size: .8rem;
   }
 
   #duet {
