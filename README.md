@@ -24,8 +24,10 @@
 
 ## [inclusion](index.html)
 
+* responsive design
 * structured data
 * semantic markup
+* hyper affordance
 * `aria-label` bonus track
 
 ## gratitude
