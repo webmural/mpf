@@ -28,7 +28,7 @@
 * structured data
 * semantic markup
 * hyper affordance
-* `aria-label` bonus track
+* bonus track focus
 
 ## gratitude
 
