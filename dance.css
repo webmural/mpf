@@ -228,6 +228,10 @@ template {
   display: none;
 }
 
+li:hover {
+  cursor: crosshair;
+}
+
 li:focus [value=energy],
 li:focus [value=nature],
 li:not(:focus) [value=symbol] {
