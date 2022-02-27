@@ -10,8 +10,8 @@
   --dew-solar: #dba;
   --dew-lunar: #315;
   --dew-locus: currentColor;
-  --dew-focus: hue-rotate(60deg);
-  --dew-hover: hue-rotate(-60deg);
+  --dew-focus: none;
+  --dew-hover: hue-rotate(-30deg);
 }
 
 .dew-preamp {
