@@ -10,9 +10,9 @@
 
 ## [composed](index.html#L20) [list](https://developer.mozilla.org/HTML/Element/ol)
 
-* 2x [energy](energy.json)
-* 5x [element](element.json)
-* 3x repeat
+* [penta element](element.json)
+* [dual energy](energy.json)
+* [triad amp](amp.json)
 
 ## cycle
 
