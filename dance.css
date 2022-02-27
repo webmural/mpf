@@ -92,6 +92,7 @@ body {
 }
 
 #about {
+  contain: content;
   display: flex;
   flex-direction: column;
   font-size: .8rem;
@@ -102,6 +103,7 @@ abbr {
 }
 
 h1 {
+  contain: style;
   text-align: center;
 }
 
@@ -126,11 +128,14 @@ data {
 }
 
 ol {
+  contain: content;
+  display: flow-root;
   list-style: none;
   padding: 0;
 }
 
 section {
+  contain: content;
   margin-block: 1em;
 }
 
@@ -140,6 +145,7 @@ section p {
 
 @media (orientation: portrait) {
   li {
+    contain: paint;
     display: flex;
     flex-flow: wrap;
   }
@@ -151,6 +157,7 @@ section p {
 
 @media (orientation: landscape) {
   li {
+    contain: paint;
     display: flex;
     flex-flow: row;
   }
