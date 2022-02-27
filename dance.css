@@ -189,7 +189,7 @@ section p {
   }
 
   li:nth-of-type(even)
-  data:nth-child(2) {
+  data:nth-child(3) {
     order: 2;
   }
 
