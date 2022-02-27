@@ -6,11 +6,12 @@
 }
 
 .dew-diy {
-  --dew-shift: color 303ms;
+  --dew-shift: color 101ms;
   --dew-solar: #dba;
   --dew-lunar: #315;
   --dew-locus: currentColor;
-  --dew-hover: hue-rotate(-120deg);
+  --dew-focus: none;
+  --dew-hover: hue-rotate(-30deg);
 }
 
 .dew-preamp {
@@ -225,4 +226,14 @@ section p {
 [hidden],
 template {
   display: none;
+}
+
+li:hover {
+  cursor: crosshair;
+}
+
+li:focus [value=energy],
+li:focus [value=nature],
+li:not(:focus) [value=symbol] {
+  font-size: 0;
 }
