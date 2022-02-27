@@ -64,8 +64,9 @@
 }
 
 :link {
+  box-sizing: border-box;
+  border: medium groove currentColor;
   text-decoration: overline dotted;
-  border: thin groove;
 }
 
 :focus {
@@ -92,6 +93,7 @@ body {
 #about {
   display: flex;
   flex-direction: column;
+  font-size: calc(1em - 1vmin);
 }
 
 abbr {
@@ -105,7 +107,6 @@ h1 {
 p {
   box-sizing: border-box;
   padding: 1em;
-  font-size: calc(2em/3);
 }
 
 i {
@@ -192,7 +193,8 @@ section p {
   }
 
   [value=nature],
-  [value=energy] {
+  [value=energy],
+  .afar {
     font-size: calc(2em/3);
   }
 
@@ -208,10 +210,6 @@ section p {
   #duet p:last-child {
     float: right;
     text-align: end;
-  }
-
-  .afar {
-    font-size: .618em;
   }
 
   .split {
