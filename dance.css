@@ -226,3 +226,8 @@ section p {
 template {
   display: none;
 }
+
+li:not(:active)
+[value=symbol] {
+  display: none;
+}
