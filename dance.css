@@ -10,7 +10,8 @@
   --dew-solar: #dba;
   --dew-lunar: #315;
   --dew-locus: currentColor;
-  --dew-hover: hue-rotate(-120deg);
+  --dew-focus: hue-rotate(60deg);
+  --dew-hover: hue-rotate(-60deg);
 }
 
 .dew-preamp {
@@ -227,7 +228,8 @@ template {
   display: none;
 }
 
-li:not(:active)
-[value=symbol] {
+li:active [value=energy],
+li:active [value=nature],
+li:not(:active) [value=symbol] {
   display: none;
 }
