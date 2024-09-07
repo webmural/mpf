@@ -1,0 +1,192 @@
+/*
+mpf.css
+https://s9a.page/dew na na na na remiXYZ
+2d9a83c38e6711684fc4bcfeb1e69738acc4488f
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .mpf-shift *,
+  .mpf-shift {
+    transition: var(--mpf-shift);
+  }
+}
+
+@media (color) {
+  .mpf-wet *,
+  .mpf-wet {
+    background-color: var(--mpf-kin);
+    color: var(--mpf-ink);
+  }
+
+  .mpf-rim *,
+  .mpf-rim {
+    border-color: var(--mpf-rim);
+  }
+
+  .mpf-hyper :any-link,
+  .mpf-hyper {
+    filter: var(--mpf-hyper);
+  }
+
+  .mpf-tab :focus,
+  .mpf-tab:focus {
+    filter: var(--mpf-focus);
+    outline-color: var(--mpf-locus);
+  }
+
+  .mpf-field:disabled {
+    filter: var(--mpf-vapor);
+  }
+
+  .mpf-image {
+    background-image: none;
+  }
+
+  .mpf-media.mpf-media,
+  .mpf-polar.mpf-polar,
+  .mpf-solar.mpf-solar,
+  .mpf-lunar.mpf-lunar {
+    fill: var(--mpf-kin);
+    background-color: var(--mpf-kin);
+    color: var(--mpf-ink);
+  }
+}
+
+:root {
+  /*dev*/
+  --mpf-hyper: none;
+  --mpf-media: var(--mpf-solar);
+  --mpf-polar: var(--mpf-lunar);
+  --mpf-kin: var(--mpf-media);
+  --mpf-ink: var(--mpf-polar);
+  --mpf-rim: var(--mpf-ink);
+  --mpf-uno: -1;
+
+ /*diy*/
+  --mpf-shift: color 101ms;
+  --mpf-slick: blue;
+  --mpf-slime: orange;
+  --mpf-solar: #bed;
+  --mpf-lunar: darkviolet;
+  --mpf-locus: currentColor;
+  --mpf-focus: saturate(300%);
+  --mpf-hover: hue-rotate(36deg);
+  --mpf-vapor: opacity(60%);
+}
+
+.mpf-ion ::selection {
+  background-color: var(--mpf-slick);
+  color: var(--mpf-slime);
+}
+
+:any-link:hover {
+  --mpf-hyper: var(--mpf-hover);
+}
+
+:any-link:focus {
+  --mpf-hyper: var(--mpf-focus);
+}
+
+.mpf-media {
+  --mpf-kin: var(--mpf-media);
+  --mpf-ink: var(--mpf-polar);
+}
+
+.mpf-polar {
+  --mpf-kin: var(--mpf-polar);
+  --mpf-ink: var(--mpf-media);
+}
+
+.mpf-solar {
+  --mpf-kin: var(--mpf-solar);
+  --mpf-ink: var(--mpf-lunar);
+}
+
+.mpf-lunar {
+  --mpf-kin: var(--mpf-lunar);
+  --mpf-ink: var(--mpf-solar);
+}
+
+.mpf-preamp {
+  --mpf-solar: skyblue;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-powamp {
+  --mpf-solar: #ec0;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-postamp {
+  --mpf-solar: #bae;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-active {
+  --mpf-solar: lightsalmon;
+  --mpf-lunar: #120e1f;
+}
+  
+.mpf-passive {
+  --mpf-solar: silver;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-wood {
+  --mpf-solar: rosybrown;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-fire {
+  --mpf-solar: orangered;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-earth {
+  --mpf-solar: sandybrown;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-metal {
+  --mpf-solar: powderblue;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-water {
+  --mpf-solar: deepskyblue;
+  --mpf-lunar: #111;
+}
+
+.mpf-vallee {
+  --mpf-solar: turquoise;
+  --mpf-lunar: #120e1f;
+}
+
+.mpf-cinema {
+  --mpf-solar: #e7f;
+  --mpf-lunar: #120e1f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mpf-media: var(--mpf-lunar);
+    --mpf-polar: var(--mpf-solar);
+    --mpf-uno: 1;
+  }
+}
+  
+@media (prefers-contrast: less) {
+  :root {
+    --mpf-solar: plum;
+    --mpf-lunar: purple;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --mpf-solar: #bed;
+    --mpf-lunar: midnightblue;
+    --mpf-slick: blue;
+    --mpf-slime: lime;
+  }
+}
